@@ -1,3 +1,6 @@
+NOTE: See the [without-spring-watcher-listen](https://github.com/jordan-brough/example-already-watched/blob/without-spring-watcher-listen/README.md)
+branch for a repro that happens even without the `spring-watcher-listen` gem.
+
 Repro:
 
 ```
@@ -1084,8 +1087,7 @@ $ git commit -m 'Blank app'
 
 
 
-
-$ rails console
+$ spring stop && rails console
         ** ERROR: directory is already being watched! **
 
         Directory: /private/tmp/example-already-watched/node_modules/.bin/compression-webpack-plugin
